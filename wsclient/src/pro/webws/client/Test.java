@@ -8,6 +8,6 @@ public class Test {
         ApplicationContext ctx = new ClassPathXmlApplicationContext("spring-client.xml");  
         IHelloWorld client = (IHelloWorld) ctx.getBean("client");  
         String result = client.sayHello("你好!");  
-        System.out.println(result);  
+        System.out.println(result);      
     }  
 }  
